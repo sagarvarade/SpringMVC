@@ -1,4 +1,4 @@
-package com.SpringMVC.SpringMVC.service;
+package com.MainApp.SpringMVC.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,9 +11,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
-import com.SpringMVC.SpringMVC.domain.AppUser;
-import com.SpringMVC.SpringMVC.domain.Role;
-import com.SpringMVC.SpringMVC.repository.UserRepository;
+import com.MainApp.SpringMVC.domain.AppUser;
+import com.MainApp.SpringMVC.domain.Role;
+import com.MainApp.SpringMVC.repository.UserRepository;
 
 public class UserDetailsServiceImpl implements UserDetailsService {
 

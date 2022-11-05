@@ -1,10 +1,10 @@
-package com.SpringMVC.SpringMVC.service;
+package com.MainApp.SpringMVC.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.SpringMVC.SpringMVC.domain.AppUser;
-import com.SpringMVC.SpringMVC.repository.UserRepository;
+import com.MainApp.SpringMVC.domain.AppUser;
+import com.MainApp.SpringMVC.repository.UserRepository;
 
 @Service
 public class UserServiceImpl implements UserService {

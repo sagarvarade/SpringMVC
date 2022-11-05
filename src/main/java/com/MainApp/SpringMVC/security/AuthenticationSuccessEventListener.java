@@ -1,21 +1,22 @@
-package com.SpringMVC.SpringMVC.security;
+package com.MainApp.SpringMVC.security;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationListener;
-import org.springframework.security.authentication.event.AuthenticationFailureBadCredentialsEvent;
+import org.springframework.security.authentication.event.AuthenticationSuccessEvent;
 import org.springframework.security.web.authentication.WebAuthenticationDetails;
 import org.springframework.stereotype.Component;
 
+
 @Component
-public class AuthenticationFailureEventListener implements ApplicationListener<AuthenticationFailureBadCredentialsEvent> {
+public class AuthenticationSuccessEventListener implements ApplicationListener<AuthenticationSuccessEvent> {
 
     private Logger log = LoggerFactory.getLogger(AuthenticationFailureEventListener.class);
 
     @Override
-    public void onApplicationEvent(AuthenticationFailureBadCredentialsEvent event) {
+    public void onApplicationEvent(AuthenticationSuccessEvent event) {
         WebAuthenticationDetails wad = (WebAuthenticationDetails) event.getAuthentication().getDetails();
-        log.info("Login failed request from " + event.getAuthentication().getDetails());
+        log.info("Login success from " + event.getAuthentication().getDetails());
     }
 
 }

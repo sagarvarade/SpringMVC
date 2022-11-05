@@ -1,4 +1,4 @@
-package com.SpringMVC.SpringMVC.config;
+package com.MainApp.SpringMVC.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -13,9 +13,9 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
-import com.SpringMVC.SpringMVC.repository.UserRepository;
-import com.SpringMVC.SpringMVC.security.AuthenticationFailureHandler;
-import com.SpringMVC.SpringMVC.service.UserDetailsServiceImpl;
+import com.MainApp.SpringMVC.repository.UserRepository;
+import com.MainApp.SpringMVC.security.AuthenticationFailureHandler;
+import com.MainApp.SpringMVC.service.UserDetailsServiceImpl;
 
 @Configuration
 @EnableWebSecurity

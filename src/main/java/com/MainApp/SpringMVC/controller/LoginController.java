@@ -1,4 +1,4 @@
-package com.SpringMVC.SpringMVC.controller;
+package com.MainApp.SpringMVC.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import com.SpringMVC.SpringMVC.domain.AppUser;
+import com.MainApp.SpringMVC.domain.AppUser;
 
 @Controller
 public class LoginController {

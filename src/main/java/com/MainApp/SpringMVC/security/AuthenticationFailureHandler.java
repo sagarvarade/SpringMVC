@@ -1,4 +1,4 @@
-package com.SpringMVC.SpringMVC.security;
+package com.MainApp.SpringMVC.security;
 
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler;

@@ -1,11 +1,11 @@
-package com.SpringMVC.SpringMVC.repository;
+package com.MainApp.SpringMVC.repository;
 
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.SpringMVC.SpringMVC.domain.AppUser;
+import com.MainApp.SpringMVC.domain.AppUser;
 
 @Repository
 public interface UserRepository extends JpaRepository<AppUser, Integer> {
