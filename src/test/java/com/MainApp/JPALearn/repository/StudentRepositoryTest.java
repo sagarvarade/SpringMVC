@@ -20,7 +20,7 @@ class StudentRepositoryTest {
 	 * .guardianEmail("vds@fd.com") .build(); studentRepository.save(student); }
 	 */
 
-	@Test
+	// @Test
 	public void saveStudent() {
 
 		Guardian guardian = Guardian.builder().email("guard@d.com").name("ganes").mobile("232").build();
@@ -30,7 +30,7 @@ class StudentRepositoryTest {
 		studentRepository.save(student);
 	}
 
-	@Test
+	// @Test
 	public void saveStudent2() {
 
 		Guardian guardian = Guardian.builder().email("abc@d.com").name("akas").mobile("121").build();
@@ -40,7 +40,7 @@ class StudentRepositoryTest {
 		studentRepository.save(student);
 	}
 
-	@Test
+	// @Test
 	public void printAllStudet() {
 		var sList = studentRepository.findAll();
 		for (var x : sList) {
@@ -48,7 +48,7 @@ class StudentRepositoryTest {
 		}
 	}
 
-	@Test
+	// @Test
 	public void printByFirstName() {
 		System.out.println(">>>>>>>> printByFirstName");
 		var sList = studentRepository.findByFirstName("Shabir");
@@ -66,17 +66,19 @@ class StudentRepositoryTest {
 		var sList2 = studentRepository.getStudentByEmailAddressNative("abc@d.com");
 		System.out.println(sList2);
 	}
-
-	/*
-	 * @Test public void printByGuardianContaining() {
-	 * System.out.println(">>>>>>>> printByGuardianContaining"); var
-	 * sList=studentRepository.findByGuardianName("an"); for(var x:sList) {
-	 * System.out.println(x); } }
-	 */
-	@Test
+	/* @Test 
+	public void printByGuardianContaining() {
+		System.out.println(">>>>>>>> printByGuardianContaining");
+		var sList = studentRepository.findByGuardianName("an");
+		for (var x : sList) {
+			System.out.println(x);
+		}
+	}*/
+	 
+	// @Test
 	public void updateRow() {
 		int res = studentRepository.updateStudentNameByEmailId("akash1", "abc@d.com");
 		System.out.println(">>>>>>> update " + res);
 	}
-
+	
 }
