@@ -10,3 +10,5 @@ https://github.com/hendisantika/spring-security-spring-boot-mysql
 
 Youtube
 https://www.youtube.com/watch?v=XszpXoII9Sg&t=13s
+
+https://github.com/spring-projects/spring-petclinic

@@ -20,9 +20,20 @@ public class DashBoardMainController {
         return "mainapp/asideNav";
     }
 	
+	@GetMapping("/dashboard")
+    public String dashboard(Model model) {
+        model.addAttribute("user", new AppUser());
+        return "mainapp/dashboard";
+    }
+	
 	@GetMapping("/footer")
     public String footer(Model model) {
         model.addAttribute("user", new AppUser());
         return "mainapp/footer";
+    }
+	@GetMapping("/mypage")
+    public String mypage(Model model) {
+        model.addAttribute("user", new AppUser());
+        return "mainapp/mypage";
     }
 }

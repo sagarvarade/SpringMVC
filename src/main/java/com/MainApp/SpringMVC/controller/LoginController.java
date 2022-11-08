@@ -26,7 +26,7 @@ public class LoginController {
     		model.addAttribute("principal",auth.getPrincipal());
     		model.addAttribute("class",auth.getClass());
     		model.addAttribute("name",auth.getName());
-    		return "mainapp/dashboard";
+    		return "mainapp/index";
     	}
         return "loginfolder/login";
     }
