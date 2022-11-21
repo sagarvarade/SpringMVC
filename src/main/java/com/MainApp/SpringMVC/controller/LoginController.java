@@ -26,7 +26,8 @@ public class LoginController {
     		model.addAttribute("principal",auth.getPrincipal());
     		model.addAttribute("class",auth.getClass());
     		model.addAttribute("name",auth.getName());
-    		return "mainapp/index";
+    		//return "mainapp/index";
+    		return "welcome";
     	}
         return "loginfolder/login";
     }
@@ -54,5 +55,10 @@ public class LoginController {
         return "loginfolder/user"; //this name should match to user.html inside templates folder
     }
 
+    @GetMapping("/home")
+    public String home(Model model) {
+        model.addAttribute("user", new AppUser());
+        return "mainapp/home";
+    }
 
 }
